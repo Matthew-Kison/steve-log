@@ -1,6 +1,6 @@
 "use client";
 
-import TiptapEdidtor from "@/_components/tiptap-editor";
+import TiptapEditor from "@/_components/editor/tiptap-editor";
 import React, { useState } from "react";
 
 const EditorPage: React.FC = () => {
@@ -37,7 +37,7 @@ const EditorPage: React.FC = () => {
         onChange={(e) => setFilename(e.target.value)}
         className="border p-2 w-full mb-4"
       />
-      <TiptapEdidtor onSave={handleSave} />
+      <TiptapEditor onSave={handleSave} />
     </div>
   );
 };
